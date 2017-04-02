@@ -9,6 +9,8 @@ public class QueueArray {
 		this.rear=-1;
 		this.arr=new int[10];
 	}
+// Function for adding to the rear of queue
+
 	public void enqueue(int data){
 		if(this.rear==-1){
 			
@@ -22,6 +24,8 @@ public class QueueArray {
 	
 		}
 	}
+// Function for removing from the front of queue
+
 	public int dequeue(){
 		if(this.front==-1){
 			return -1;
@@ -33,9 +37,11 @@ public class QueueArray {
 			
 		}
 	}
+// Function for calculating size of the queue
 	public int size(){
 		return this.rear-this.front+1;
 	}
+// Function for returning from the front of queue
 	public int top(){
 		if(this.front==0){
 			return -1;
@@ -44,6 +50,7 @@ public class QueueArray {
 			return this.arr[this.front];
 		}
 	}
+// Function for dispalying the queue
 	public void display(){
 		int i=this.front;
 		while(i<this.rear){
@@ -52,6 +59,7 @@ public class QueueArray {
 		}
 		System.out.println("END");
 	}
+// Function for determining is the queue empty or not
 	public boolean isEmpty(){
 		return this.size()==0;
 	}
