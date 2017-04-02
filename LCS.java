@@ -11,7 +11,7 @@ public class LCS {
 		System.out.println(lcs_dp(s1,s2));
 
 	}
-	// Naive Solution 
+	// Naive Solution Time Complexity -> O(2^n)
 	
 	private static int lcs_naive(String s1,String s2){
 		if(s1.length()==0 ||s2.length()==0)
@@ -25,7 +25,7 @@ public class LCS {
 		}
 	}
 	 
-	// Dynamic Programming Solution  Complexity -> O(n^2)
+	// Dynamic Programming Solution  Time Complexity -> O(n^2)
 	
 	private static int lcs_dp(String s1,String s2){
 		int[][]arr=new int[s1.length()+1][s2.length()+1];
