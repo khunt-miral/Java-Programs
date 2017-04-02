@@ -17,11 +17,7 @@ public class SumPair {
 		pair(a,target);
 
 	}
-	public static void triplet(int[]a,int target){
-		int left
-		
-	}
-
+  // Function for finding a pair with their sum equal to a specific value
 	public static void pair(int[] a, int target) {
 		int left = 0, right = a.length - 1;
 		while (left < right) {
@@ -36,7 +32,7 @@ public class SumPair {
 			}
 		}
 	}
-
+   // Functions for sorting an array
 	public static int[] mergeSort(int[] arr, int start, int end) {
 		if (start >= end) {
 			int[] ar = new int[1];
