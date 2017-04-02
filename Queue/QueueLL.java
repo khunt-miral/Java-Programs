@@ -20,7 +20,8 @@ public class QueueLL {
 		this.rear=null;
 		this.front=null;
 	}
-	
+
+// Function for adding to the rear of queue
 	public void enqueue(int data){
 		Node newNode =new Node(data);
 		if(this.rear==null)	{
@@ -33,6 +34,7 @@ public class QueueLL {
 		}
 		this.size++;
 	}
+// Function for removing from the front of queue
 	public Integer dequeue(){
 	   if(this.front==null)
 	   {
@@ -46,12 +48,15 @@ public class QueueLL {
 		   
 	   }
 	}
+// Function for calculating the size of queue
 	public int size(){
 		return this.size;
 	}
+// Function for determining is the queue empty or not
 	public boolean isEmpty(){
 		return this.size==0;
 	}
+// Function for getting the front of queue
 	public Integer top(){
 		if(this.size==0)
 			return null;
@@ -59,6 +64,7 @@ public class QueueLL {
 			return this.front.data;
 		
 	}
+// Function for displaying the queue
 	public void display(){
 		for(Node i=this.front;i!=null;i=i.next){
 			System.out.print(i.data+" => ");
