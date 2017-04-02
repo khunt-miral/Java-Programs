@@ -1,6 +1,7 @@
 package LinkedList;
 
 public class LL {
+   
 	private class Node {
 		int data;
 		Node next;
@@ -19,7 +20,7 @@ public class LL {
 		this.tail=null;
 		this.size=0;
 	}
-
+// Function for adding to the beginning of linked list
 	public void addFirst(int data) {
 		Node newNode = new Node(data);
 		if (this.head == null) {
@@ -31,6 +32,7 @@ public class LL {
 		}
 		this.size++;
 	}
+// Function for adding to the end of linked list
 
 	public void addLast(int data) {
 		Node newNode=new Node(data);
@@ -45,6 +47,7 @@ public class LL {
 		this.size++;
 
 	}
+// Function for adding to any position in the linked list
 
 	public void addBtw(int data, int pos) {
 		if(pos==1){
@@ -63,6 +66,7 @@ public class LL {
 		}
 		this.size++;
 	}
+// Function for displaying the linked list
 	public void dislay(){
 		Node i=this.head;
 		while(i!=null){
@@ -71,6 +75,8 @@ public class LL {
 		}
 		System.out.println("END");
 	}
+// Function for removing from the beginning of linked list
+
     public Integer removeFirst(){
     	if(this.head==null)
     		return null;
@@ -81,6 +87,8 @@ public class LL {
     		return rv;
     	}
     }
+// Function for removing from the end of linked list
+
     public Integer removeLast(){
     	if(this.head==null)
     		return null;
@@ -99,6 +107,8 @@ public class LL {
     	}
     	
     }
+// Function for removing from any position in the linked list
+
     public Integer removeBtw(int pos){
     	if(pos==1){
     		return this.removeFirst();
